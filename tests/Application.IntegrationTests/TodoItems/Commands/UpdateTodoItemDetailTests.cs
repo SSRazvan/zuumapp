@@ -1,14 +1,14 @@
-﻿using CleanArchitecture.Application.Common.Exceptions;
-using CleanArchitecture.Application.TodoItems.Commands.CreateTodoItem;
-using CleanArchitecture.Application.TodoItems.Commands.UpdateTodoItem;
-using CleanArchitecture.Application.TodoItems.Commands.UpdateTodoItemDetail;
-using CleanArchitecture.Application.TodoLists.Commands.CreateTodoList;
-using CleanArchitecture.Domain.Entities;
-using CleanArchitecture.Domain.Enums;
+﻿using ZuumApp.Application.Common.Exceptions;
+using ZuumApp.Application.TodoItems.Commands.CreateTodoItem;
+using ZuumApp.Application.TodoItems.Commands.UpdateTodoItem;
+using ZuumApp.Application.TodoItems.Commands.UpdateTodoItemDetail;
+using ZuumApp.Application.TodoLists.Commands.CreateTodoList;
+using ZuumApp.Domain.Entities;
+using ZuumApp.Domain.Enums;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace CleanArchitecture.Application.IntegrationTests.TodoItems.Commands;
+namespace ZuumApp.Application.IntegrationTests.TodoItems.Commands;
 
 using static Testing;
 

@@ -1,39 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
 import { SharedRoutingModule } from './shared-routing.module';
-// import {
-//     MatAutocompleteModule,
-//     MatButtonModule,
-//     MatButtonToggleModule,
-//     MatCardModule,
-//     MatCheckboxModule,
-//     MatChipsModule,
-//     MatDatepickerModule,
-//     MatDialogModule,
-//     MatExpansionModule,
-//     MatGridListModule,
-//     MatIconModule,
-//     MatInputModule,
-//     MatListModule,
-//     MatMenuModule,
-//     MatNativeDateModule,
-//     MatPaginatorModule,
-//     MatProgressBarModule,
-//     MatProgressSpinnerModule,
-//     MatRadioModule,
-//     MatRippleModule,
-//     MatSelectModule,
-//     MatSidenavModule,
-//     MatSliderModule,
-//     MatSlideToggleModule,
-//     MatSnackBarModule,
-//     MatSortModule,
-//     MatTableModule,
-//     MatTabsModule,
-//     MatToolbarModule,
-//     MatTooltipModule,
-//     MatStepperModule,
-// } from '@angular/material';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
@@ -63,11 +31,17 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatMenuModule } from '@angular/material/menu';
+import { GeneralDialogComponent } from './components/general-dialog/general-dialog.component';
+import { FavIconComponent } from './components/fav-icon/fav-icon.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
-    
+    GeneralDialogComponent,
+    FavIconComponent
   ],
   imports: [
+    CommonModule,
+    FontAwesomeModule,
     MatAutocompleteModule,
     MatButtonModule,
     MatButtonToggleModule,
@@ -129,7 +103,11 @@ import { MatMenuModule } from '@angular/material/menu';
       MatToolbarModule,
       MatTooltipModule,
       CommonModule,
+      BrowserModule,
       SharedRoutingModule,
+      GeneralDialogComponent,
+      FavIconComponent
+
   ]
 })
 export class SharedModule { }

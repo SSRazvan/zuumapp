@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -18,7 +18,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { TokenComponent } from './token/token.component';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+import { ToastrModule } from 'ngx-toastr';
 import { ContactComponent } from './modules/contact/contact.component';
+import { CreateContactComponent } from './modules/contact/components/create-contact/create-contact.component';
+import { UpdateContactCommand } from './web-api-client';
+import { UpdateContactComponent } from './modules/contact/components/update-contact/update-contact.component';
+import { FavoriteComponent } from './modules/favorite/favorite.component';
+import { CreateFavoriteComponent } from './modules/favorite/components/create-favorite/create-favorite.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +35,11 @@ import { ContactComponent } from './modules/contact/contact.component';
     FetchDataComponent,
     TodoComponent,
     TokenComponent,
-    ContactComponent
+    ContactComponent,
+    CreateContactComponent,
+    UpdateContactComponent,
+    FavoriteComponent,
+    CreateFavoriteComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -38,10 +48,17 @@ import { ContactComponent } from './modules/contact/contact.component';
     CoreModule,
     SharedModule,
     FormsModule,
+    ReactiveFormsModule,
     ApiAuthorizationModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    ToastrModule.forRoot({
+      timeOut: 10000,
+      positionClass: 'toast-bottom-right',
+      preventDuplicates: true,
+    }),
+
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true },

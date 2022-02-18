@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
-        <RootNamespace>CleanArchitecture.Application</RootNamespace>
-        <AssemblyName>CleanArchitecture.Application</AssemblyName>
+        <RootNamespace>ZuumApp.Application</RootNamespace>
+        <AssemblyName>ZuumApp.Application</AssemblyName>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
@@ -17,10 +17,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Domain\Domain.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Contacts\Commands\" />
     </ItemGroup>
 
 </Project>

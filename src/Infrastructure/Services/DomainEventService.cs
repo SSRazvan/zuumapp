@@ -1,10 +1,10 @@
-﻿using CleanArchitecture.Application.Common.Interfaces;
-using CleanArchitecture.Application.Common.Models;
-using CleanArchitecture.Domain.Common;
+﻿using ZuumApp.Application.Common.Interfaces;
+using ZuumApp.Application.Common.Models;
+using ZuumApp.Domain.Common;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace CleanArchitecture.Infrastructure.Services;
+namespace ZuumApp.Infrastructure.Services;
 
 public class DomainEventService : IDomainEventService
 {

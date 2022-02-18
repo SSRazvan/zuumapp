@@ -1,9 +1,9 @@
-﻿using CleanArchitecture.Domain.Exceptions;
-using CleanArchitecture.Domain.ValueObjects;
+﻿using ZuumApp.Domain.Exceptions;
+using ZuumApp.Domain.ValueObjects;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace CleanArchitecture.Domain.UnitTests.ValueObjects;
+namespace ZuumApp.Domain.UnitTests.ValueObjects;
 
 public class ColourTests
 {

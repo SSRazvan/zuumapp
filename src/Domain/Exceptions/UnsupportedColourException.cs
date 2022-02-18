@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Domain.Exceptions {
+﻿namespace ZuumApp.Domain.Exceptions {
     public class UnsupportedColourException : Exception
     {
         public UnsupportedColourException(string code)

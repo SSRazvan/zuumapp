@@ -1,12 +1,12 @@
-﻿using CleanArchitecture.Application.TodoLists.Commands.CreateTodoList;
-using CleanArchitecture.Application.TodoLists.Commands.DeleteTodoList;
-using CleanArchitecture.Application.TodoLists.Commands.UpdateTodoList;
-using CleanArchitecture.Application.TodoLists.Queries.ExportTodos;
-using CleanArchitecture.Application.TodoLists.Queries.GetTodos;
+﻿using ZuumApp.Application.TodoLists.Commands.CreateTodoList;
+using ZuumApp.Application.TodoLists.Commands.DeleteTodoList;
+using ZuumApp.Application.TodoLists.Commands.UpdateTodoList;
+using ZuumApp.Application.TodoLists.Queries.ExportTodos;
+using ZuumApp.Application.TodoLists.Queries.GetTodos;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArchitecture.WebUI.Controllers;
+namespace ZuumApp.WebUI.Controllers;
 
 [Authorize]
 public class TodoListsController : ApiControllerBase

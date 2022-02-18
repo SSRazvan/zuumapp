@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Domain.ValueObjects
+﻿namespace ZuumApp.Domain.ValueObjects
 {
     public class Colour : ValueObject
     {

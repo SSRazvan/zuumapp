@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using CleanArchitecture.Application.Common.Interfaces;
-using CleanArchitecture.Domain.Enums;
+using ZuumApp.Application.Common.Interfaces;
+using ZuumApp.Domain.Enums;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchitecture.Application.TodoLists.Queries.GetTodos;
+namespace ZuumApp.Application.TodoLists.Queries.GetTodos;
 
 public class GetTodosQuery : IRequest<TodosVm>
 {

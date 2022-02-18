@@ -1,10 +1,10 @@
-﻿using CleanArchitecture.Application.Common.Interfaces;
-using CleanArchitecture.Application.Common.Models;
+﻿using ZuumApp.Application.Common.Interfaces;
+using ZuumApp.Application.Common.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchitecture.Infrastructure.Identity;
+namespace ZuumApp.Infrastructure.Identity;
 
 public class IdentityService : IIdentityService
 {

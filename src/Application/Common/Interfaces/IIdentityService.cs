@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Application.Common.Models;
+﻿using ZuumApp.Application.Common.Models;
 
-namespace CleanArchitecture.Application.Common.Interfaces;
+namespace ZuumApp.Application.Common.Interfaces;
 
 public interface IIdentityService
 {

@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace CleanArchitecture.Infrastructure.Persistence.Migrations
+namespace ZuumApp.Infrastructure.Persistence.Migrations
 {
     public partial class ContactsUserEmailColumn : Migration
     {

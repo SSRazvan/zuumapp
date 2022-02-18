@@ -1,9 +1,9 @@
-﻿using CleanArchitecture.Application.Common.Models;
-using CleanArchitecture.Domain.Events;
+﻿using ZuumApp.Application.Common.Models;
+using ZuumApp.Domain.Events;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace CleanArchitecture.Application.TodoItems.EventHandlers;
+namespace ZuumApp.Application.TodoItems.EventHandlers;
 
 public class TodoItemCreatedEventHandler : INotificationHandler<DomainEventNotification<TodoItemCreatedEvent>>
 {
@@ -18,7 +18,7 @@ public class TodoItemCreatedEventHandler : INotificationHandler<DomainEventNotif
     {
         var domainEvent = notification.DomainEvent;
 
-        _logger.LogInformation("CleanArchitecture Domain Event: {DomainEvent}", domainEvent.GetType().Name);
+        _logger.LogInformation("ZuumApp Domain Event: {DomainEvent}", domainEvent.GetType().Name);
 
         return Task.CompletedTask;
     }

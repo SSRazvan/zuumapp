@@ -1,6 +1,37 @@
 <body>
-  <app-nav-menu></app-nav-menu>
-  <div>
-    <router-outlet></router-outlet>
-  </div>
+  <!-- <app-nav-menu></app-nav-menu> -->
+  <!-- <app-sidebar></app-sidebar> -->
+  <mat-toolbar class="mat-elevation-z8" style="justify-content: flex-end; font-size: 17px;">
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened">
+        menu
+      </mat-icon>
+      <mat-icon *ngIf="sidenav.opened">
+        close
+      </mat-icon>
+    </button>
+    <app-login-menu></app-login-menu>
+  </mat-toolbar>
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+      <button mat-button class="menu-button" [routerLinkActive]="['link-active']" [routerLink]="['/contacts']">
+        <mat-icon>contact_phone</mat-icon>
+        <span>Contacts</span>
+      </button>
+      <button mat-button class="menu-button" [routerLinkActive]="['link-active']" [routerLink]="['/favorites']">
+        <mat-icon>favorite</mat-icon>
+        <span>Favorites</span>
+      </button>
+      <mat-divider></mat-divider>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="content mat-elevation-z8">
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
 </body>

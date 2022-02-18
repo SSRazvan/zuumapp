@@ -1,10 +1,10 @@
-﻿using CleanArchitecture.Application.Common.Exceptions;
-using CleanArchitecture.Application.Common.Interfaces;
-using CleanArchitecture.Domain.Entities;
+﻿using ZuumApp.Application.Common.Exceptions;
+using ZuumApp.Application.Common.Interfaces;
+using ZuumApp.Domain.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchitecture.Application.TodoLists.Commands.DeleteTodoList;
+namespace ZuumApp.Application.TodoLists.Commands.DeleteTodoList;
 
 public class DeleteTodoListCommand : IRequest
 {

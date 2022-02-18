@@ -1,0 +1,21 @@
+<div style="margin-right: 1em;">
+  <form style="display: flex;
+                flex-direction: column;
+                width: 8em;
+                margin-top: 1em;" [formGroup]="contactsFormGroup">
+
+    <mat-form-field appearance="fill" style="font-size: 20px">
+      <mat-label>Select contact</mat-label>
+      <mat-select formControlName="contact" name="contact">
+        <mat-option *ngFor="let contact of contacts" [value]="contact.id">
+          {{contact.name}}
+        </mat-option>
+      </mat-select>
+      <mat-error *ngIf="this.contactsFormGroup.controls.contact.hasError('required')">
+        Contact is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <button (click)="createFavorite()" mat-raised-button class="btn-primary" style="margin-top: 1em;"
+      [disabled]="isDisabled">CREATE</button>
+  </form>
+</div>

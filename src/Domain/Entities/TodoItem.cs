@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Domain.Entities {
+﻿namespace ZuumApp.Domain.Entities {
     public class TodoItem : AuditableEntity, IHasDomainEvent
     {
         public int Id { get; set; }

@@ -1,0 +1,10 @@
+<div *ngIf="isFavorite; else notFavorite">
+  <div (click)="toogleIsFavorite($event)">
+    <fa-icon [icon]="faHeart" colo></fa-icon>
+  </div>
+</div>
+<ng-template #notFavorite>
+  <div (click)="toogleIsFavorite($event)">
+    <fa-icon [icon]="faHeartBroken"></fa-icon>
+  </div>
+</ng-template>

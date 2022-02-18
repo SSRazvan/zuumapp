@@ -1,9 +1,9 @@
-﻿using CleanArchitecture.Application.Common.Exceptions;
+﻿using ZuumApp.Application.Common.Exceptions;
 using FluentAssertions;
 using FluentValidation.Results;
 using NUnit.Framework;
 
-namespace CleanArchitecture.Application.UnitTests.Common.Exceptions;
+namespace ZuumApp.Application.UnitTests.Common.Exceptions;
 
 public class ValidationExceptionTests
 {

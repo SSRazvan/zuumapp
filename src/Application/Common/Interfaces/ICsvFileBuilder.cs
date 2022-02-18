@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Application.TodoLists.Queries.ExportTodos;
+﻿using ZuumApp.Application.TodoLists.Queries.ExportTodos;
 
-namespace CleanArchitecture.Application.Common.Interfaces;
+namespace ZuumApp.Application.Common.Interfaces;
 
 public interface ICsvFileBuilder
 {

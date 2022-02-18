@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Domain.Events {
+﻿namespace ZuumApp.Domain.Events {
     public class TodoItemCompletedEvent : DomainEvent
     {
         public TodoItemCompletedEvent(TodoItem item)

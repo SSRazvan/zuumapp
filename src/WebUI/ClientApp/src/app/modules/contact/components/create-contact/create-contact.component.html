@@ -1,0 +1,35 @@
+<div style="margin-right: 1em;">
+  <form style="display: flex;
+                flex-direction: column;
+                width: 8em;
+                margin-top: 1em;" [formGroup]="contactsFormGroup">
+    <mat-form-field class="example-full-width" appearance="fill" style="font-size: 20px">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" contactholder="" value="">
+      <mat-error *ngIf="this.contactsFormGroup.controls.name.hasError('required')">
+        Name is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill" style="font-size: 20px">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" contactholder="" value="">
+      <mat-error *ngIf="this.contactsFormGroup.controls.email.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+      <mat-error
+        *ngIf="this.contactsFormGroup.controls.email.hasError('email') && !this.contactsFormGroup.controls.email.hasError('required')">
+        Invalid email address
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill" style="font-size: 20px">
+      <mat-label>Phone number</mat-label>
+      <span matPrefix>+40 &nbsp;</span>
+      <input matInput formControlName="phoneNumber" contactholder="" value="" type="number">
+      <mat-error *ngIf="this.contactsFormGroup.controls.phoneNumber.hasError('required')">
+        Phone number is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <button (click)="createContact()" mat-raised-button class="btn-primary" style="margin-top: 1em;"
+      [disabled]="isDisabled">CREATE</button>
+  </form>
+</div>

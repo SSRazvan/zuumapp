@@ -1,7 +1,7 @@
-﻿using CleanArchitecture.Application.WeatherForecasts.Queries.GetWeatherForecasts;
+﻿using ZuumApp.Application.WeatherForecasts.Queries.GetWeatherForecasts;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArchitecture.WebUI.Controllers;
+namespace ZuumApp.WebUI.Controllers;
 
 public class WeatherForecastController : ApiControllerBase
 {

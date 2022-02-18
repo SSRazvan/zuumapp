@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Domain.Common {
+﻿namespace ZuumApp.Domain.Common {
     public interface IHasDomainEvent
     {
         public List<DomainEvent> DomainEvents { get; set; }

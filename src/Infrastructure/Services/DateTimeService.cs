@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Application.Common.Interfaces;
+﻿using ZuumApp.Application.Common.Interfaces;
 
-namespace CleanArchitecture.Infrastructure.Services;
+namespace ZuumApp.Infrastructure.Services;
 
 public class DateTimeService : IDateTime
 {

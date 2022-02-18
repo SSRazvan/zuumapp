@@ -1,9 +1,9 @@
-﻿using CleanArchitecture.Application.Common.Interfaces;
-using CleanArchitecture.Domain.Entities;
-using CleanArchitecture.Domain.Events;
+﻿using ZuumApp.Application.Common.Interfaces;
+using ZuumApp.Domain.Entities;
+using ZuumApp.Domain.Events;
 using MediatR;
 
-namespace CleanArchitecture.Application.TodoItems.Commands.CreateTodoItem;
+namespace ZuumApp.Application.TodoItems.Commands.CreateTodoItem;
 
 public class CreateTodoItemCommand : IRequest<int>
 {

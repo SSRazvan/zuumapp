@@ -1,8 +1,8 @@
 ﻿using System.Security.Claims;
 
-using CleanArchitecture.Application.Common.Interfaces;
+using ZuumApp.Application.Common.Interfaces;
 
-namespace CleanArchitecture.WebUI.Services;
+namespace ZuumApp.WebUI.Services;
 
 public class CurrentUserService : ICurrentUserService
 {

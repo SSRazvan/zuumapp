@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Domain.Common;
+﻿using ZuumApp.Domain.Common;
 
-namespace CleanArchitecture.Application.Common.Interfaces;
+namespace ZuumApp.Application.Common.Interfaces;
 
 public interface IDomainEventService
 {

@@ -1,9 +1,9 @@
-﻿using CleanArchitecture.Domain.Entities;
-using CleanArchitecture.Domain.ValueObjects;
-using CleanArchitecture.Infrastructure.Identity;
+﻿using ZuumApp.Domain.Entities;
+using ZuumApp.Domain.ValueObjects;
+using ZuumApp.Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity;
 
-namespace CleanArchitecture.Infrastructure.Persistence;
+namespace ZuumApp.Infrastructure.Persistence;
 
 public static class ApplicationDbContextSeed
 {

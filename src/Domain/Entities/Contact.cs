@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanArchitecture.Domain.Entities;
+namespace ZuumApp.Domain.Entities;
 
 public class Contact
 {
@@ -12,5 +12,5 @@ public class Contact
     public string Name { get; set; }
     public string Email { get; set; }
     public string Phone { get; set; }
-    public string UserEmail { get; set; }
+    public string UserId { get; set; }
 }

@@ -1,7 +1,7 @@
-﻿using CleanArchitecture.Domain.Entities;
+﻿using ZuumApp.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchitecture.Application.Common.Interfaces;
+namespace ZuumApp.Application.Common.Interfaces;
 
 public interface IApplicationDbContext
 {
@@ -9,6 +9,7 @@ public interface IApplicationDbContext
 
     DbSet<TodoItem> TodoItems { get; }
     DbSet<Contact> Contacts { get; }
+    DbSet<Favorite> Favorites { get; }
 
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }

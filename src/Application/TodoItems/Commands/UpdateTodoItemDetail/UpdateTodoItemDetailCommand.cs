@@ -1,10 +1,10 @@
-﻿using CleanArchitecture.Application.Common.Exceptions;
-using CleanArchitecture.Application.Common.Interfaces;
-using CleanArchitecture.Domain.Entities;
-using CleanArchitecture.Domain.Enums;
+﻿using ZuumApp.Application.Common.Exceptions;
+using ZuumApp.Application.Common.Interfaces;
+using ZuumApp.Domain.Entities;
+using ZuumApp.Domain.Enums;
 using MediatR;
 
-namespace CleanArchitecture.Application.TodoItems.Commands.UpdateTodoItemDetail;
+namespace ZuumApp.Application.TodoItems.Commands.UpdateTodoItemDetail;
 
 public class UpdateTodoItemDetailCommand : IRequest
 {

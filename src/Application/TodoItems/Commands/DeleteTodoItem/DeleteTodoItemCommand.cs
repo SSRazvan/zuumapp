@@ -1,10 +1,10 @@
-﻿using CleanArchitecture.Application.Common.Exceptions;
-using CleanArchitecture.Application.Common.Interfaces;
-using CleanArchitecture.Domain.Entities;
-using CleanArchitecture.Domain.Events;
+﻿using ZuumApp.Application.Common.Exceptions;
+using ZuumApp.Application.Common.Interfaces;
+using ZuumApp.Domain.Entities;
+using ZuumApp.Domain.Events;
 using MediatR;
 
-namespace CleanArchitecture.Application.TodoItems.Commands.DeleteTodoItem;
+namespace ZuumApp.Application.TodoItems.Commands.DeleteTodoItem;
 
 public class DeleteTodoItemCommand : IRequest
 {

@@ -1,8 +1,8 @@
-﻿using CleanArchitecture.Application.Common.Interfaces;
-using CleanArchitecture.Application.Common.Security;
+﻿using ZuumApp.Application.Common.Interfaces;
+using ZuumApp.Application.Common.Security;
 using MediatR;
 
-namespace CleanArchitecture.Application.TodoLists.Commands.PurgeTodoLists;
+namespace ZuumApp.Application.TodoLists.Commands.PurgeTodoLists;
 
 [Authorize(Roles = "Administrator")]
 [Authorize(Policy = "CanPurge")]

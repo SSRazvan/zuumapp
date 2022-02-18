@@ -1,11 +1,11 @@
-﻿using CleanArchitecture.Application.Common.Exceptions;
-using CleanArchitecture.Application.TodoLists.Commands.CreateTodoList;
-using CleanArchitecture.Application.TodoLists.Commands.UpdateTodoList;
-using CleanArchitecture.Domain.Entities;
+﻿using ZuumApp.Application.Common.Exceptions;
+using ZuumApp.Application.TodoLists.Commands.CreateTodoList;
+using ZuumApp.Application.TodoLists.Commands.UpdateTodoList;
+using ZuumApp.Domain.Entities;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace CleanArchitecture.Application.IntegrationTests.TodoLists.Commands;
+namespace ZuumApp.Application.IntegrationTests.TodoLists.Commands;
 
 using static Testing;
 

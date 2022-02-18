@@ -1,6 +1,6 @@
-﻿global using CleanArchitecture.Domain.Common;
-global using CleanArchitecture.Domain.Entities;
-global using CleanArchitecture.Domain.Enums;
-global using CleanArchitecture.Domain.Events;
-global using CleanArchitecture.Domain.Exceptions;
-global using CleanArchitecture.Domain.ValueObjects;
+﻿global using ZuumApp.Domain.Common;
+global using ZuumApp.Domain.Entities;
+global using ZuumApp.Domain.Enums;
+global using ZuumApp.Domain.Events;
+global using ZuumApp.Domain.Exceptions;
+global using ZuumApp.Domain.ValueObjects;

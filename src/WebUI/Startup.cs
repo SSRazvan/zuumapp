@@ -1,15 +1,15 @@
-using CleanArchitecture.Application;
-using CleanArchitecture.Application.Common.Interfaces;
-using CleanArchitecture.Infrastructure;
-using CleanArchitecture.Infrastructure.Persistence;
-using CleanArchitecture.WebUI.Filters;
-using CleanArchitecture.WebUI.Services;
+using ZuumApp.Application;
+using ZuumApp.Application.Common.Interfaces;
+using ZuumApp.Infrastructure;
+using ZuumApp.Infrastructure.Persistence;
+using ZuumApp.WebUI.Filters;
+using ZuumApp.WebUI.Services;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 using NSwag;
 using NSwag.Generation.Processors.Security;
 
-namespace CleanArchitecture.WebUI;
+namespace ZuumApp.WebUI;
 
 public class Startup
 {
@@ -51,7 +51,7 @@ public class Startup
 
         services.AddOpenApiDocument(configure =>
         {
-            configure.Title = "CleanArchitecture API";
+            configure.Title = "ZuumApp API";
             configure.AddSecurity("JWT", Enumerable.Empty<string>(), new OpenApiSecurityScheme
             {
                 Type = OpenApiSecuritySchemeType.ApiKey,

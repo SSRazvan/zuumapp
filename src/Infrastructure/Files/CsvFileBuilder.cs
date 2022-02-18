@@ -1,10 +1,10 @@
 ﻿using System.Globalization;
-using CleanArchitecture.Application.Common.Interfaces;
-using CleanArchitecture.Application.TodoLists.Queries.ExportTodos;
-using CleanArchitecture.Infrastructure.Files.Maps;
+using ZuumApp.Application.Common.Interfaces;
+using ZuumApp.Application.TodoLists.Queries.ExportTodos;
+using ZuumApp.Infrastructure.Files.Maps;
 using CsvHelper;
 
-namespace CleanArchitecture.Infrastructure.Files;
+namespace ZuumApp.Infrastructure.Files;
 
 public class CsvFileBuilder : ICsvFileBuilder
 {

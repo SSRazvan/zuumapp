@@ -1,8 +1,8 @@
-﻿using CleanArchitecture.Application.Common.Interfaces;
-using CleanArchitecture.Domain.Entities;
+﻿using ZuumApp.Application.Common.Interfaces;
+using ZuumApp.Domain.Entities;
 using MediatR;
 
-namespace CleanArchitecture.Application.TodoLists.Commands.CreateTodoList;
+namespace ZuumApp.Application.TodoLists.Commands.CreateTodoList;
 
 public class CreateTodoListCommand : IRequest<int>
 {

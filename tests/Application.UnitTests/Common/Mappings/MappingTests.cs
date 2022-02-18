@@ -1,11 +1,11 @@
 ﻿using System.Runtime.Serialization;
 using AutoMapper;
-using CleanArchitecture.Application.Common.Mappings;
-using CleanArchitecture.Application.TodoLists.Queries.GetTodos;
-using CleanArchitecture.Domain.Entities;
+using ZuumApp.Application.Common.Mappings;
+using ZuumApp.Application.TodoLists.Queries.GetTodos;
+using ZuumApp.Domain.Entities;
 using NUnit.Framework;
 
-namespace CleanArchitecture.Application.UnitTests.Common.Mappings;
+namespace ZuumApp.Application.UnitTests.Common.Mappings;
 
 public class MappingTests
 {

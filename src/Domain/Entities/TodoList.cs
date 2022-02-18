@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Domain.Entities {
+﻿namespace ZuumApp.Domain.Entities {
     public class TodoList : AuditableEntity
     {
         public int Id { get; set; }

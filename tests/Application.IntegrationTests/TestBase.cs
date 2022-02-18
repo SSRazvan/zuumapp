@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace CleanArchitecture.Application.IntegrationTests;
+namespace ZuumApp.Application.IntegrationTests;
 
 using static Testing;
 

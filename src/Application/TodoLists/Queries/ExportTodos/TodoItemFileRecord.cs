@@ -1,7 +1,7 @@
-﻿using CleanArchitecture.Application.Common.Mappings;
-using CleanArchitecture.Domain.Entities;
+﻿using ZuumApp.Application.Common.Mappings;
+using ZuumApp.Domain.Entities;
 
-namespace CleanArchitecture.Application.TodoLists.Queries.ExportTodos;
+namespace ZuumApp.Application.TodoLists.Queries.ExportTodos;
 
 public class TodoItemRecord : IMapFrom<TodoItem>
 {
